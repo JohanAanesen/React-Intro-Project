@@ -13,8 +13,8 @@ export default function Sudoku() {
 
 	return (
 		<>
-			<div style={{ border: "1px", color: "black" }}>
-				<Row type="flex" justify="center">
+			<div style={{ border: "1px", color: "black", margin: "1px" }}>
+				<Row type="flex" justify="center" align="centerto">
 					<div>
 						<Square />
 					</div>
