@@ -1,4 +1,4 @@
-import React, { Component, Fragment, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import initialMembers from "../members";
 
 export default function Profile({match}) {

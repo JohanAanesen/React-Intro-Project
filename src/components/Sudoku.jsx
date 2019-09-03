@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Square from "./Square";
 import { Row } from "antd";
 import initialBoard from "../board";

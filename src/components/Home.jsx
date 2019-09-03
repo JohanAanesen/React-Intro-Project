@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 import initialMembers from "../members";
-import { List, Typography } from 'antd';
-
+import { List } from "antd";
 
 export default function Home() {
 	const [total, setTotal] = useState(0);
@@ -21,7 +20,11 @@ export default function Home() {
 				size="small"
 				bordered
 				dataSource={initialMembers}
-				renderItem={item => <List.Item><Link to={`/profile/${item.id}`}>{item.name}</Link></List.Item>}
+				renderItem={item => (
+					<List.Item>
+						<Link to={`/profile/${item.id}`}>{item.name}</Link>
+					</List.Item>
+				)}
 			/>
 
 			<h5>Total bounty: {total}</h5>

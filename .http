@@ -1,0 +1,13 @@
+GET http://localhost:5000/todos
+
+GET http://localhost:5000/todos?id=1
+
+POST http://localhost:5000/todos HTTP/1.1
+content-type: application/json
+
+{
+    "message": "cry alot"
+}
+
+
+DELETE http://localhost:5000/todos/1
